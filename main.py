@@ -66,8 +66,8 @@ def get_all_posts_with_threads():
 
 if __name__ == "__main__":
     print("Normal Call:")
-    print(f"\t{timeit(get_all_posts_normal_call, number=1)}")
+    print(f"\t{timeit(get_all_posts_normal_call, number=1):.3f}")
     print("Call with Client")
-    print(f"\t{timeit(get_all_posts_with_client, number=1)}")
+    print(f"\t{timeit(get_all_posts_with_client, number=1):.3f}")
     print("Thread Calls")
-    print(f"\t{timeit(get_all_posts_with_threads, number=1)}")
+    print(f"\t{timeit(get_all_posts_with_threads, number=1):.3f}")
